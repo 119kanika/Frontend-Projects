@@ -7,3 +7,6 @@ Enter a text or a website link and the app will generate a QR Code for it in no 
 ## 2. Todo List App
 Create a list of all the work you have to complete in a day using this Todo App. 
 Also, you can edit the tasks and delete them on their completion.
+
+## 3. Calculator
+A simple calculator with all the basic functionalities.
