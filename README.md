@@ -10,3 +10,6 @@ Also, you can edit the tasks and delete them on their completion.
 
 ## 3. Calculator
 A simple calculator with all the basic functionalities.
+
+## 4. Quiz App
+Quiz app in React having two components, 1 for displaying questions and options from json data and 2nd for displaying result.
