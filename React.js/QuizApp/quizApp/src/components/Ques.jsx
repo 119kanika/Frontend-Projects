@@ -1,4 +1,4 @@
-const Ques = ({ ques, onAnsClick }) => {
+const Ques = ({ ques, onAnsClick = () => {} }) => {
     return (
         <div className="questionCard">
             <h2>{ques.question}</h2>
