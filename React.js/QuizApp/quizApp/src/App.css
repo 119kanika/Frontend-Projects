@@ -1,0 +1,52 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.app{
+    text-align: center;
+}
+
+.questionCard{
+    /* height: 100%; */
+    width: 50%;
+    border: 1px black solid;
+    padding: 1%;
+    margin: auto;
+}
+
+.questionCard h2{
+    margin-bottom: 5%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.options{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options li{
+    flex: 1 0 45%;
+    align-items: center;
+    max-width: 50%;
+    /* border: 1px solid grey; */
+    margin: 5px;
+    /* padding: 1px; */
+}
+
+.options > li > button{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
