@@ -7,6 +7,7 @@ generateBtn.addEventListener('click', () => {
     let qrValue = qrInput.value;
 
     if (!qrValue) {
+        alert("Please enter a valid URL to generate a QR Code.")
         return;
     }
 
