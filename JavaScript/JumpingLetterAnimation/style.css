@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 216);
+    height: 100vh;
+}
+
+.container{
+    cursor: pointer;
+}
+
+span{
+    font-size: 11rem;
+    color: brown;
+    font-weight: bolder;
+    line-height: 1;
+    display: inline-block;  /* each span acts like its own block  */
+}
+
+span.active{
+    animation: jump 2s ease-in-out;
+}
+
+@keyframes jump{
+    0% {
+        transform: translate(0,0) rotate(180deg);
+    }
+    100% {
+        transform: scale(2.5) translate(0, -180);
+    }
+}
