@@ -1,5 +1,17 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+import { FaMapMarker } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 const JobListings = ({ job }) => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  let description = job.description;
+
+  if (!showFullDescription) {
+    description = description.substring(0, 90) + "...";
+  }
+
   return (
     <div className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">
@@ -8,7 +20,7 @@ const JobListings = ({ job }) => {
           <h3 className="text-xl font-bold">{job.title}</h3>
         </div>
 
-        <div className="mb-5">{job.description}</div>
+        <div className="mb-5">{description}</div>
 
         <button
           onClick={() => setShowFullDescription((prevState) => !prevState)}
