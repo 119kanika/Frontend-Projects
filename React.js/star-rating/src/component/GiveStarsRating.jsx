@@ -5,23 +5,29 @@ import { useState } from "react";
 
 const GiveStarsRating = () => {
   const [starCount, setStarCount] = useState(0);
+  const [hoverStarCount, setHoverStarCount] = useState(0);
+
   return (
     <div>
       {[...Array(5)].map((elem, index) => {
         return (
           <span
             key={index}
+            onMouseOver={() => {
+              setHoverStarCount(index + 1);
+            }}
+            onMouseOut={() => {
+              setHoverStarCount(0);
+            }}
             onClick={() => {
               setStarCount(index + 1);
             }}
-            onMouseOver={() => {
-              setStarCount(index + 1);
-            }}
-            onMouseOut={() => {
-              setStarCount(0);
-            }}
           >
-            {index + 1 <= starCount ? <FaStar /> : <AiOutlineStar />}
+            {index + 1 <= starCount || index + 1 <= hoverStarCount ? (
+              <FaStar />
+            ) : (
+              <AiOutlineStar />
+            )}
           </span>
         );
       })}
