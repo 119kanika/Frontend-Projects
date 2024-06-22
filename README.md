@@ -1,4 +1,4 @@
-# Frontend-Projects
+# Frontend machine coding questions
 This Repo includes frontend projects from beginner to advance level. Stack include HTML, CSS, Javascript and Reactjs.
 
 ## 1. QR Code Generator

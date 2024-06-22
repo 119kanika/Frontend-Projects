@@ -7,7 +7,7 @@ function App() {
     <div>
       <GiveStarsRating />
 
-      {/* <ShowStarsRating stars="2" reviews="This was a nice product" /> */}
+      <ShowStarsRating stars="2" reviews="This was a nice product" />
     </div>
   );
 }
