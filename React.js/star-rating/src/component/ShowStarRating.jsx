@@ -3,7 +3,7 @@
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 
-const StarsRating = ({ stars, reviews }) => {
+const ShowStarsRating = ({ stars, reviews }) => {
   const ratingStar = Array.from({ length: 5 }, (elem, index) => {
     let num = index + 0.5; //for showing the half star
 
@@ -30,4 +30,4 @@ const StarsRating = ({ stars, reviews }) => {
   );
 };
 
-export default StarsRating;
+export default ShowStarsRating;

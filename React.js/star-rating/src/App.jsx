@@ -1,13 +1,13 @@
 import "./App.css";
-import StarsRating from "./component/StarsRating";
+import GiveStarsRating from "./component/GiveStarsRating";
+import ShowStarsRating from "./component/ShowStarRating";
 
 function App() {
   return (
     <div>
-      <StarsRating stars="4.2" reviews="This was a nice product" />
-      <StarsRating stars="2" reviews="This was a nice product" />
-      <StarsRating stars="3.6" reviews="This was a nice product" />
-      <StarsRating stars="0" reviews="This was a nice product" />
+      <GiveStarsRating />
+
+      {/* <ShowStarsRating stars="2" reviews="This was a nice product" /> */}
     </div>
   );
 }
